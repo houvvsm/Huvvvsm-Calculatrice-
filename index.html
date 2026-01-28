@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HUVVSM Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="brand">
+    <div class="logo">
+      <svg viewBox="0 0 120 120">
+        <defs>
+          <linearGradient id="g" x1="0" x2="1">
+            <stop offset="0" stop-color="#5af3ff"/>
+            <stop offset="1" stop-color="#8b5cff"/>
+          </linearGradient>
+        </defs>
+        <g fill="none" stroke="url(#g)" stroke-width="8"
+           transform="translate(12,12) scale(0.8)">
+          <path d="M10 10 L10 90 L30 90 L30 54 L60 90 L90 54 L90 90 L110 90 L110 10"/>
+        </g>
+      </svg>
+    </div>
+
+    <h1 class="brand-title">HUVVSM</h1>
+  </div>
+
+  <div class="container">
+
+    <div class="calc-wrapper">
+
+<div class="calculator" id="calculator">
+  <input type="text" id="display" disabled>
+
+  <div class="buttons">
+    <button class="op" onclick="add('(')">(</button>
+    <button class="op" onclick="add(')')">)</button>
+    <button class="delete" onclick="deleteOne()">⌫</button>
+    <button class="clear" onclick="clearDisplay()">C</button>
+
+    <button onclick="add('7')">7</button>
+    <button onclick="add('8')">8</button>
+    <button onclick="add('9')">9</button>
+    <button class="op" onclick="add('/')">÷</button>
+
+    <button onclick="add('4')">4</button>
+    <button onclick="add('5')">5</button>
+    <button onclick="add('6')">6</button>
+    <button class="op" onclick="add('*')">×</button>
+
+    <button onclick="add('1')">1</button>
+    <button onclick="add('2')">2</button>
+    <button onclick="add('3')">3</button>
+    <button class="op" onclick="add('-')">−</button>
+    <button onclick="add('0')">0</button>
+    <button onclick="add('.')">.</button>
+    <button class="op" onclick="add('+')">+</button>
+    <button class="equal" onclick="calculate()">=</button>
+  </div>
+
+</div>
+
+      <div class="history" id="historyPanel">
+        <h3>HISTORY</h3>
+        <ul id="historyList"></ul>
+        <button class="clear-history" onclick="clearHistory()">CLEAR</button>
+      </div>
+
+    </div>
+  </div>
+
+  <button class="toggle-history" onclick="toggleHistory()">📜 HISTORY</button>
+
+ <div id="overlay" class="overlay" onclick="closeHistory()"></div>
+ <div class="footer">HUVVSM • CALC</div>
+<script src="script.js"></script>
+</body>
+</html>
