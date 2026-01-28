@@ -35,7 +35,7 @@ body {
   letter-spacing: 6px;
   font-weight: 700;
 
-  /* animated gradient */
+  /*================= animated gradient =================*/
   background: linear-gradient(
     90deg,
     #5af3ff,
@@ -51,12 +51,12 @@ body {
   background-clip: text;
   color: transparent;
 
-  /* glow */
+  /* ================= glow =================*/
   text-shadow:
     0 0 6px rgba(90,243,255,0.55),
     0 0 14px rgba(139,92,255,0.45);
 
-  /* the merge animation */
+  /* ================= the merge animation ================= */
   animation: huvvsmFlow 6s ease-in-out infinite;
 }
 
@@ -88,7 +88,7 @@ body {
 
   background: rgba(10, 15, 35, 0.9);
   border-radius: 18px;
-  padding: 20px 20px 16px; /* ✅ bottom padding adjusted */
+  padding: 20px 20px 16px; 
 
   transition: transform 0.45s cubic-bezier(.4,0,.2,1);
   box-shadow:
@@ -250,8 +250,8 @@ button:hover {
 
 /* ===== History as Modal ===== */
 .history{
-  /* keep your existing history styles */
-  z-index: 60; /* above overlay */
+  
+  z-index: 60; 
 }
 
 /* when modal open */
@@ -268,7 +268,7 @@ button:hover {
   box-shadow: 0 0 40px rgba(0,0,0,0.6);
 }
 
-/* optional: prevent page scroll when modal open */
+
 body.modal-lock{
   overflow: hidden;
 }
@@ -302,8 +302,9 @@ body.modal-lock{
   user-select: none;
 }
 
-/* subtle glow on hover (optional) */
+/* subtle glow on hover */
 .footer:hover{
   color: rgba(230,250,255,0.6);
   text-shadow: 0 0 8px rgba(90,243,255,0.4);
+
 }
