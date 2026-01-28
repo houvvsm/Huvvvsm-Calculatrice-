@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (/[+\/*]/.test(value) && display.value === "") return;
     if (/[+\-*/]/.test(lastChar) && /[+\-*/]/.test(value)) return;
 
-    // Dot handling (allow 0.5)
+    // Dot handling 
     if (value === ".") {
       let parts = display.value.split(/[+\-*/()]/);
       let lastPart = parts[parts.length - 1];
@@ -211,3 +211,4 @@ document.addEventListener("keydown", (e) => {
 
 window.toggleHistory = toggleHistory;
 window.closeHistory = closeHistory;
+
